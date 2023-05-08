@@ -1,0 +1,300 @@
+body {
+  /* padding: 2vmin;
+  padding-top: 4%; */
+  position: relative;
+  /* display: flex;
+  flex-direction: column;
+  height: 50vh; */
+  font-family: 'Urbanist', sans-serif;
+}
+
+#EOnavbar .navbar-brand {
+  font-size: 4vmin;
+  font-weight: bold;
+  color: rgb(13, 15, 79);
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 2.5vmin;
+  font-weight: bolder;
+  color: white;
+}
+
+.nav-pills .nav-link.active {
+  background-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: rgb(13, 15, 79);
+}
+
+.nav-transparent {
+  background-color: transparent;
+  transition: background-color 300ms linear;
+}
+
+.nav-colored {
+  background-color: rgba(145, 15, 28, .9) !important;
+  transition: background-color 300ms linear;
+}
+
+.navbar-brand {
+  font-family: 'Questrial', sans-serif;
+  font-weight: bolder;
+}
+
+#intro-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_page_image_slideshow {
+  height: 60vh;
+  width: 100%;
+  background-color: blueviolet;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation-name: home_page_image_slideshow;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  /* -webkit-animation-name: home_page_image_slideshow;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite; */
+}
+
+@keyframes home_page_image_slideshow {
+  25% {
+    /* Ireland */
+    background-image: url('https://imgur.com/ETN1xQO');
+    /* -webkit-background-image: url("https://imgur.com/RTBeZg3"); */
+  }
+  50% {
+    /* AUFC */
+    background-image: url("https://imgur.com/VvD8v8o");
+    /* -webkit-background-image: url("https://imgur.com/dVIGf9v"); */
+  }
+  75% {
+    /* Zion */
+    background-image: url("https://imgur.com/QdEIbh0");
+    /* -webkit-background-image: url("https://imgur.com/RTBeZg3"); */
+  }
+  100% {
+    /* SJ USVI */
+    background-image: url("https://imgur.com/5QndAh7");
+    /* -webkit-background-image: url("https://imgur.com/dVIGf9v"); */
+  }
+}
+
+#lead-in {
+  background-color: rgba(174, 179, 190, .6);
+  padding-top: 2vmin;
+  padding-bottom: 4vmin;
+  padding-left: 12vmin;
+  padding-right: 12vmin;
+  border-radius: 4vmin;
+  display: grid;
+}
+
+#intro-h1 {
+ justify-self: center;
+ color: white;
+ font-family: 'Questrial', sans-serif;
+ font-weight: bolder;
+}
+
+#intro-div p {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 3vmin;
+}
+
+#rotating-text span{
+  position: absolute;
+  white-space: nowrap;
+  opacity: 0;
+  animation: rotating-text 40s linear infinite;
+}
+
+#rotating-text span:nth-child(2) {
+  animation-delay: 5s;
+}
+
+#rotating-text span:nth-child(3) {
+  animation-delay: 10s;
+}
+
+#rotating-text span:nth-child(4) {
+  animation-delay: 15s;
+}
+
+#rotating-text span:nth-child(5) {
+  animation-delay: 20s;
+}
+
+#rotating-text span:nth-child(6) {
+  animation-delay: 25s;
+}
+
+#rotating-text span:nth-child(7) {
+  animation-delay: 30s;
+}
+
+#rotating-text span:nth-child(8) {
+  animation-delay: 35s;
+}
+
+@keyframes rotating-text {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    transform: translateY(-20px);
+  }
+  7% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  22% {
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#About {
+  padding: 2vmin;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: cyan;
+}
+
+#About h2 {
+  align-self: center;
+  text-decoration: underline;
+}
+
+
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#headshot {
+  scale: 85%;
+  border-radius: 50%;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1vmin;
+}
+
+#About p {
+  align-self: center;
+  text-align: center;
+  font-size: 2.5vmin;
+}
+
+#Skills {
+  padding: 2vmin;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#Skills h2 {
+  align-self: center;
+  text-decoration: underline;
+}
+
+icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+icons div {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(6, 15vw);
+  justify-items: center;
+  align-items: center;
+}
+
+icons div:last-child {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 15vw);
+  justify-items: center;
+  align-items: center;
+}
+
+#jira {
+  scale: 40%;
+}
+
+#materialize {
+  scale: 60%;
+}
+
+#mongoose {
+  scale: 60%;
+}
+
+#Work {
+  padding: 2vmin;
+  display: flex;
+  flex-direction: column;
+}
+
+#Work h2 {
+  align-self: center;
+  text-decoration: underline;
+}
+
+#Work icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 10vh;
+}
+
+#Work icons img {
+  margin-right: 1.6vmin;
+}
+
+#materialize-ic {
+  height: 8vh;
+  width: 8vmin;
+}
+
+#mongoose-ic {
+  height: 8vh;
+  width: 8vmin;
+}
