@@ -1,3 +1,4 @@
+@media (min-width: 280px) and (max-width:1000px) {
 body {
   /* padding: 2vmin;
   padding-top: 4%; */
@@ -9,10 +10,11 @@ body {
 }
 
 #EOnavbar .navbar-brand {
-  font-size: 4vmin;
-  font-weight: bold;
-  color: rgb(13, 15, 79);
+  font-size: 4.5vmin;
+  color: rgb(168, 146, 98);
   text-shadow: 1px 1px 1px #fff;
+  font-family: 'Questrial', sans-serif;
+  font-weight: bolder;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -26,7 +28,7 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgb(13, 15, 79);
+  color: rgb(168, 146, 98);
 }
 
 .nav-transparent {
@@ -35,13 +37,8 @@ body {
 }
 
 .nav-colored {
-  background-color: rgba(145, 15, 28, .9) !important;
+  background-color: rgba(154, 27, 47, .9) !important;
   transition: background-color 300ms linear;
-}
-
-.navbar-brand {
-  font-family: 'Questrial', sans-serif;
-  font-weight: bolder;
 }
 
 #intro-div {
@@ -54,63 +51,58 @@ body {
 .home_page_image_slideshow {
   height: 60vh;
   width: 100%;
-  background-color: blueviolet;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  animation-name: home_page_image_slideshow;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  /* -webkit-animation-name: home_page_image_slideshow;
-  -webkit-animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite; */
+  animation: top-slideshow 60s linear infinite;
 }
 
-@keyframes home_page_image_slideshow {
-  25% {
+@keyframes top-slideshow {
+  0% {
     /* Ireland */
-    background-image: url('https://imgur.com/ETN1xQO');
-    /* -webkit-background-image: url("https://imgur.com/RTBeZg3"); */
+    background-image: url('/assets/Trinity-College-Ireland-2019.jpg');
+  }
+  25% {
+    /* AUFC */
+    background-image: url("/assets/AUFC-Championship-2018.jpg");
   }
   50% {
-    /* AUFC */
-    background-image: url("https://imgur.com/VvD8v8o");
-    /* -webkit-background-image: url("https://imgur.com/dVIGf9v"); */
+    /* Zion */
+    background-image: url("/assets/Zion.jpg");
   }
   75% {
-    /* Zion */
-    background-image: url("https://imgur.com/QdEIbh0");
-    /* -webkit-background-image: url("https://imgur.com/RTBeZg3"); */
+    /* SJ USVI */
+    background-image: url("/assets/St-John-View-2022.jpg");
   }
   100% {
-    /* SJ USVI */
-    background-image: url("https://imgur.com/5QndAh7");
-    /* -webkit-background-image: url("https://imgur.com/dVIGf9v"); */
+    background-image: url('/assets/Trinity-College-Ireland-2019.jpg');
   }
 }
 
 #lead-in {
-  background-color: rgba(174, 179, 190, .6);
-  padding-top: 2vmin;
+  background-color: rgba(174, 179, 190, .8);
+  padding-top: 1vmin;
   padding-bottom: 4vmin;
-  padding-left: 12vmin;
-  padding-right: 12vmin;
+  padding-left: 5vmin;
+  padding-right: 5vmin;
   border-radius: 4vmin;
   display: grid;
 }
 
-#intro-h1 {
+#lead-in #intro-h {
  justify-self: center;
  color: white;
  font-family: 'Questrial', sans-serif;
  font-weight: bolder;
+ font-size: 6vmin;
 }
 
 #intro-div p {
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   color: #fff;
-  font-size: 3vmin;
+  font-size: 2.5vmin;
+  display: grid;
 }
 
 #rotating-text span{
@@ -191,30 +183,36 @@ body {
   background-color: cyan;
 }
 
-#About h2 {
+#About #about-h {
   align-self: center;
   text-decoration: underline;
+  font-weight: bolder;
+  font-size: 6vmin;
 }
-
 
 .about {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  /* flex-wrap: nowrap; */
 }
 
 #headshot {
-  scale: 85%;
+  align-self: center;
+  scale: 100%;
+  height: 35vh;
+  width: 70vw;
   border-radius: 50%;
   border-color: #fff;
   border-style: solid;
   border-width: 1vmin;
+  margin: 1vmin;
 }
 
 #About p {
   align-self: center;
   text-align: center;
-  font-size: 2.5vmin;
+  font-size: 3vmin;
+  padding: 2vmin;
 }
 
 #Skills {
@@ -224,9 +222,11 @@ body {
   
 }
 
-#Skills h2 {
+#Skills p {
   align-self: center;
   text-decoration: underline;
+  font-weight: bolder;
+  font-size: 6vmin;
 }
 
 icons {
@@ -241,29 +241,23 @@ icons {
 icons div {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(6, 15vw);
-  justify-items: center;
-  align-items: center;
+  grid-template-columns: repeat(6, 19vw);
+  column-gap: 4vmin;
+  margin: 1vmin;
+  scale: 70%;
 }
 
 icons div:last-child {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(3, 15vw);
-  justify-items: center;
-  align-items: center;
+  grid-template-columns: repeat(3, 21vw);
+  scale: 70%;
+  column-gap: 4vmin;
 }
 
-#jira {
-  scale: 40%;
-}
-
-#materialize {
-  scale: 60%;
-}
-
-#mongoose {
-  scale: 60%;
+icons div > * {
+  height: 10vh;
+  width: 10vh;
 }
 
 #Work {
@@ -272,9 +266,11 @@ icons div:last-child {
   flex-direction: column;
 }
 
-#Work h2 {
+#Work #work-p {
   align-self: center;
   text-decoration: underline;
+  font-weight: bolder;
+  font-size: 6vmin;
 }
 
 #Work icons {
@@ -283,10 +279,15 @@ icons div:last-child {
   flex-wrap: wrap;
   justify-content: flex-start;
   height: 10vh;
+  align-self: center;
 }
 
 #Work icons img {
   margin-right: 1.6vmin;
+}
+
+#Work form {
+  margin: 1vmin;
 }
 
 #materialize-ic {
@@ -297,4 +298,397 @@ icons div:last-child {
 #mongoose-ic {
   height: 8vh;
   width: 8vmin;
+}
+
+#docupets {
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5vh 40vh 15vh 10vh;
+}
+
+#docupets p {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.docupets-slideshow {
+  height: 45vh;
+  width: 40vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  animation: docupets-slideshow 30s linear infinite;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 2;
+  grid-column: 2;
+}
+
+@keyframes docupets-slideshow {
+  0% {
+    background-image: url('/assets/DocuPets-Yourpets.png');
+  }
+  25% {
+    background-image: url("/assets/DocuPets-add-visit.png");
+  }
+  50% {
+    background-image: url("/assets/DocuPets-petdetail_mobile.png");
+  }
+  75% {
+    background-image: url("/assets/Docupets-sidenav.png");
+  }
+  100% {
+    background-image: url('/assets/DocuPets-Yourpets.png');
+  }
+}
+
+#docupets icons {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+#docupets form {
+  grid-row: 4;
+  align-self: center;
+  justify-self: center;
+}
+
+#docupets form button {
+  font-size: 3vmin;
+}
+
+}
+
+/* ================================== */
+
+@media (min-width: 1001px) {
+
+body {
+  /* padding: 2vmin;
+  padding-top: 4%; */
+  position: relative;
+  /* display: flex;
+  flex-direction: column;
+  height: 50vh; */
+  font-family: 'Urbanist', sans-serif;
+}
+  
+#EOnavbar .navbar-brand {
+  font-size: 4.5vmin;
+  font-weight: bold;
+  color: rgb(168, 146, 98);
+  text-shadow: 1px 1px 1px #fff;
+}
+  
+.navbar-light .navbar-nav .nav-link {
+  font-size: 2.5vmin;
+  font-weight: bolder;
+  color: white;
+}
+  
+.nav-pills .nav-link.active {
+  background-color: white;
+}
+  
+.navbar-light .navbar-nav .nav-link.active {
+  color: rgb(168, 146, 98);
+}
+  
+.nav-transparent {
+  background-color: transparent;
+  transition: background-color 300ms linear;
+}
+  
+.nav-colored {
+  background-color: rgba(154, 27, 47, .9) !important;
+  transition: background-color 300ms linear;
+}
+ 
+.navbar-brand {
+  font-family: 'Questrial', sans-serif;
+  font-weight: bolder;
+}
+  
+#intro-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  
+.home_page_image_slideshow {
+  height: 60vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: top-slideshow 60s linear infinite;
+}
+  
+@keyframes top-slideshow {
+  0% {
+    /* Ireland */
+    background-image: url('/assets/Trinity-College-Ireland-2019.jpg');
+   }
+  25% {
+    /* AUFC */
+    background-image: url("/assets/AUFC-Championship-2018.jpg");
+  }
+  50% {
+    /* Zion */
+    background-image: url("/assets/Zion.jpg");
+  }
+  75% {
+    /* SJ USVI */
+    background-image: url("/assets/St-John-View-2022.jpg");
+  }
+  100% {
+    background-image: url('/assets/Trinity-College-Ireland-2019.jpg');
+  }
+}
+  
+#lead-in {
+  background-color: rgba(174, 179, 190, .8);
+  padding-top: 1vmin;
+  padding-bottom: 4vmin;
+  padding-left: 12vmin;
+  padding-right: 14vmin;
+  border-radius: 4vmin;
+  display: grid;
+}
+  
+#lead-in #intro-h {
+ justify-self: center;
+ color: white;
+ font-family: 'Questrial', sans-serif;
+ font-weight: bolder;
+ font-size: 6vmin;
+}
+ 
+#intro-div p {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 2.5vmin;
+}
+  
+#rotating-text span{
+  position: absolute;
+  white-space: nowrap;
+  opacity: 0;
+  animation: rotating-text 40s linear infinite;
+}
+  
+#rotating-text span:nth-child(2) {
+  animation-delay: 5s;
+}
+  
+#rotating-text span:nth-child(3) {
+  animation-delay: 10s;
+}
+  
+#rotating-text span:nth-child(4) {
+  animation-delay: 15s;
+}
+ 
+#rotating-text span:nth-child(5) {
+  animation-delay: 20s;
+}
+ 
+#rotating-text span:nth-child(6) {
+  animation-delay: 25s;
+}
+  
+#rotating-text span:nth-child(7) {
+  animation-delay: 30s;
+}
+  
+#rotating-text span:nth-child(8) {
+  animation-delay: 35s;
+}
+  
+@keyframes rotating-text {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    transform: translateY(-20px);
+  }
+  7% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  22% {
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+  
+#About {
+  padding: 2vmin;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: cyan;
+}
+  
+#About #about-h {
+  align-self: center;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 4vmin;
+}
+  
+  
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+  
+#headshot {
+  scale: 85%;
+  border-radius: 50%;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1vmin;
+}
+  
+#About p {
+  align-self: center;
+  text-align: center;
+  font-size: 2.5vmin;
+}
+  
+#Skills {
+  padding: 2vmin;
+  display: flex;
+  flex-direction: column;
+}
+  
+#Skills p {
+  align-self: center;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 4vmin;
+}
+  
+icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+ 
+icons div {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(6, 15vw);
+  margin: 2vmin;
+  justify-items: center;
+  align-items: center;
+}
+  
+icons div:last-child {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 15vw);
+  justify-items: center;
+  align-items: center;
+}
+
+icons div > * {
+  height: 20vh;
+  width: 20vh;
+}
+ 
+#Work {
+  padding: 2vmin;
+  display: flex;
+  flex-direction: column;
+}
+  
+#Work #work-p {
+  align-self: center;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 4vmin;
+}
+  
+#Work icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 10vh;
+}
+  
+#Work icons img {
+  margin-right: 1.6vmin;
+}
+  
+#Work form {
+  margin: 1vmin;
+}
+  
+#materialize-ic {
+  height: 8vh;
+  width: 8vmin;
+}
+ 
+#mongoose-ic {
+  height: 8vh;
+  width: 8vmin;
+}
+  
+.docupets-slideshow {
+  height: 40vh;
+  width: 40vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  animation: docupets-slideshow 30s linear infinite;
+}
+  
+@keyframes docupets-slideshow {
+  0% {
+    background-image: url('/assets/DocuPets-Yourpets.png');
+  }
+  25% {
+    background-image: url("/assets/DocuPets-add-visit.png");
+  }
+  50% {
+    background-image: url("/assets/DocuPets-petdetail_mobile.png");
+  }
+  75% {
+    background-image: url("/assets/Docupets-sidenav.png");
+  }
+  100% {
+    background-image: url('/assets/DocuPets-Yourpets.png');
+  }
+}
+
+
 }
