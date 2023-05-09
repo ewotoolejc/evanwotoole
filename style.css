@@ -60,22 +60,22 @@ body {
 @keyframes top-slideshow {
   0% {
     /* Ireland */
-    background-image: url('/assets/Trinity-College-Ireland-2019.jpg');
+    background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/Trinity-College-Ireland-2019.jpg');
   }
   25% {
     /* AUFC */
-    background-image: url("/assets/AUFC-Championship-2018.jpg");
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/AUFC-Championship-2018.jpg");
   }
   50% {
     /* Zion */
-    background-image: url("/assets/Zion.jpg");
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Zion.jpg");
   }
   75% {
     /* SJ USVI */
-    background-image: url("/assets/St-John-View-2022.jpg");
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/St-John-View-2022.jpg");
   }
   100% {
-    background-image: url('/assets/Trinity-College-Ireland-2019.jpg');
+    background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/Trinity-College-Ireland-2019.jpg');
   }
 }
 
@@ -328,19 +328,19 @@ icons div > * {
 
 @keyframes docupets-slideshow {
   0% {
-    background-image: url('/assets/DocuPets-Yourpets.png');
+    background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/DocuPets-Yourpets.png');
   }
   25% {
-    background-image: url("/assets/DocuPets-add-visit.png");
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/DocuPets-add-visit.png");
   }
   50% {
-    background-image: url("/assets/DocuPets-petdetail_mobile.png");
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/DocuPets-petdetail_mobile.png");
   }
   75% {
-    background-image: url("/assets/Docupets-sidenav.png");
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Docupets-sidenav.png");
   }
   100% {
-    background-image: url('/assets/DocuPets-Yourpets.png');
+    background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/DocuPets-Yourpets.png');
   }
 }
 
