@@ -176,7 +176,7 @@ body {
 }
 
 #About {
-  padding: 2vmin;
+  /* padding: 2vmin; */
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -193,7 +193,6 @@ body {
 .about {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: nowrap; */
 }
 
 #headshot {
@@ -420,7 +419,7 @@ icons div > * {
 #LAMS {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 7vh 40vh 15vh 10vh;
+  grid-template-rows: 7vh 40vh 17vh 10vh;
 }
 
 #LAMS h3 {
@@ -431,6 +430,8 @@ icons div > * {
 #LAMS p {
   grid-column: 1;
   grid-row: 2;
+  align-self: center;
+  justify-self: center;
 }
 
 .LAMS-slideshow {
@@ -482,12 +483,14 @@ icons div > * {
 #MasterMind {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 7vh 40vh 7vh 10vh;
+  grid-template-rows: 7vh 40vh 8vh 10vh;
 }
 
 #MasterMind p {
   grid-column: 1;
   grid-row: 2;
+  align-self: center;
+  justify-self: center;
 }
 
 .MasterMind-slideshow {
@@ -508,13 +511,13 @@ icons div > * {
     background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/AUFC-MasterMind-Initial.png');
   }
   25% {
-    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/AUFC-Mastermind-Guess-Screen.png");
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/AUFC-MasterMind-Guess-Screen.png");
   }
   50% {
-    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/AUFC-Mastermind-Loss.png");
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/AUFC-MasterMind-Loss.png");
   }
   75% {
-    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/AUFC-Mastermind-Win.png");
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/AUFC-MasterMind-Win.png");
   }
   100% {
     background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/AUFC-MasterMind-Initial-3.23.23.png');
@@ -524,6 +527,8 @@ icons div > * {
 #MasterMind icons {
   grid-column: 1 / span 2;
   grid-row: 3;
+  align-self: center;
+  justify-self: flex-start;
 }
 
 #MasterMind form {
