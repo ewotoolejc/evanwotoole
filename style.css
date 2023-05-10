@@ -296,13 +296,11 @@ icons div > * {
 }
 
 #mongoose-ic {
-  height: 8vh;
-  width: 8vmin;
+  height: 10vh;
+  width: 15vw;
 }
 
 #docupets {
-  /* display: flex;
-  flex-direction: column; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 5vh 40vh 15vh 10vh;
@@ -311,6 +309,8 @@ icons div > * {
 #docupets p {
   grid-column: 1;
   grid-row: 2;
+  align-self: center;
+  justify-self: center;
 }
 
 .docupets-slideshow {
@@ -359,6 +359,215 @@ icons div > * {
   font-size: 3vmin;
 }
 
+
+#JerseyCollector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5vh 40vh 12vh 10vh;
+}
+
+#JerseyCollector p {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* .JerseyCollector-slideshow {
+  height: 45vh;
+  width: 40vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  animation: JerseyCollector-slideshow 30s linear infinite;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 2;
+  grid-column: 2;
+}
+
+@keyframes JerseyCollector-slideshow {
+  0% {
+    background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/DocuPets-Yourpets.png');
+  }
+  25% {
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/DocuPets-add-visit.png");
+  }
+  50% {
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/DocuPets-petdetail_mobile.png");
+  }
+  75% {
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Docupets-sidenav.png");
+  }
+  100% {
+    background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/DocuPets-Yourpets.png');
+  }
+} */
+
+#JerseyCollector icons {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+#JerseyCollector form {
+  grid-row: 4;
+  align-self: center;
+  justify-self: center;
+}
+
+#JerseyCollector form button {
+  font-size: 2vmin;
+}
+
+#LAMS {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 7vh 40vh 15vh 10vh;
+}
+
+#LAMS h3 {
+  grid-column: 1 /span 2;
+  grid-row: 1;
+}
+
+#LAMS p {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.LAMS-slideshow {
+  height: 45vh;
+  width: 40vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  animation: LAMS-slideshow 30s linear infinite;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 2;
+  grid-column: 2;
+}
+
+@keyframes LAMS-slideshow {
+  0% {
+    background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/LAMS-Home-Standard.png');
+  }
+  25% {
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/LAMS-Roster-Mobile.png");
+  }
+  50% {
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Add-an-Artist-Mobile.png");
+  }
+  75% {
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Deals-Page-Standard.png");
+  }
+  100% {
+    background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/LAMS-Home-Standard.png');
+  }
+}
+
+#LAMS icons {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+#LAMS form {
+  grid-row: 4;
+  align-self: center;
+  justify-self: center;
+}
+
+#LAMS form button {
+  font-size: 4vmin;
+}
+
+#MasterMind {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 7vh 40vh 7vh 10vh;
+}
+
+#MasterMind p {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.MasterMind-slideshow {
+  height: 45vh;
+  width: 40vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  animation: MasterMind-slideshow 30s linear infinite;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 2;
+  grid-column: 2;
+}
+
+@keyframes MasterMind-slideshow {
+  0% {
+    background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/AUFC-MasterMind-Initial.png');
+  }
+  25% {
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/AUFC-Mastermind-Guess-Screen.png");
+  }
+  50% {
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/AUFC-Mastermind-Loss.png");
+  }
+  75% {
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/AUFC-Mastermind-Win.png");
+  }
+  100% {
+    background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/AUFC-MasterMind-Initial-3.23.23.png');
+  }
+}
+
+#MasterMind icons {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+#MasterMind form {
+  grid-row: 4;
+  align-self: center;
+  justify-self: center;
+}
+
+#MasterMind form button {
+  font-size: 3vmin;
+}
+
+#Contact {
+  display: flex;
+  flex-direction: column;
+  padding: 2vmin;
+  align-items: center;
+}
+
+#Contact #contact-p {
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 6vmin;
+}
+
+#Contact p {
+  text-align: center;
+}
+
+#social-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+#social-buttons form {
+  margin: 1vmin;
+}
+
+footer {
+  padding: 1vmin;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
 }
 
 /* ================================== */
