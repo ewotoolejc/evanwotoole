@@ -7,6 +7,7 @@ body {
   flex-direction: column;
   height: 50vh; */
   font-family: 'Urbanist', sans-serif;
+  background-image: linear-gradient(160deg, #cc6c69 0%, #c2b06ef5 70%, #f7c514 98%);  
 }
 
 html {
@@ -14,7 +15,7 @@ html {
 }
 
 #EOnavbar .navbar-brand {
-  font-size: 4.5vmin;
+  font-size: 8vmin;
   color: rgb(168, 146, 98);
   text-shadow: 1px 1px 1px #fff;
   font-family: 'Questrial', sans-serif;
@@ -25,10 +26,12 @@ html {
   font-size: 2.5vmin;
   font-weight: bolder;
   color: white;
+  padding: 2vmin;
 }
 
 .nav-pills .nav-link.active {
   background-color: white;
+  width: fit-content;
 }
 
 .navbar-light .navbar-nav .nav-link.active {
@@ -98,14 +101,14 @@ html {
  color: white;
  font-family: 'Questrial', sans-serif;
  font-weight: bolder;
- font-size: 6vmin;
+ font-size: 7vmin;
 }
 
 #intro-div p {
   text-align: left;
   font-weight: bold;
   color: #fff;
-  font-size: 2.5vmin;
+  font-size: 3vmin;
   display: grid;
 }
 
@@ -180,17 +183,17 @@ html {
 }
 
 #About {
-  /* padding: 2vmin; */
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: cyan;
+  /* background-color: #bd615e;   */
 }
 
 #About #about-h {
   align-self: center;
   text-decoration: underline;
   font-weight: bolder;
+  color:#d7fa6e;
   font-size: 6vmin;
 }
 
@@ -205,10 +208,12 @@ html {
   height: 35vh;
   width: 70vw;
   border-radius: 50%;
-  border-color: #fff;
+  border-color: white;
   border-style: solid;
   border-width: 1vmin;
   margin: 1vmin;
+  /* background-image: linear-gradient(140deg, #2a5fff 0%, #a3a3a3df 40%, #9ac001 85%); */
+  
 }
 
 #About p {
@@ -216,13 +221,14 @@ html {
   text-align: center;
   font-size: 3vmin;
   padding: 2vmin;
+  color:#d7fa6e;
 }
 
 #Skills {
   padding: 2vmin;
   display: flex;
   flex-direction: column;
-  
+  /* background-image: linear-gradient(140deg, #cc6c69 0%, #c2b06ef5 60%, #ffe941 90%);   */
 }
 
 #Skills p {
@@ -246,7 +252,6 @@ icons div {
   grid-template-rows: 1fr;
   grid-template-columns: repeat(6, 19vw);
   column-gap: 4vmin;
-  margin: 1vmin;
   scale: 70%;
 }
 
@@ -294,13 +299,13 @@ icons div > * {
 }
 
 #materialize-ic {
-  height: 8vh;
+  height: 5vh;
   width: 8vmin;
 }
 
 #mongoose-ic {
   height: 10vh;
-  width: 15vw;
+  width: 11vw;
 }
 
 #docupets {
@@ -356,10 +361,13 @@ icons div > * {
   grid-row: 4;
   align-self: center;
   justify-self: center;
+  color: #7e7c7c;
 }
 
 #docupets form button {
-  font-size: 3vmin;
+  font-size: 3.5vmin;
+  color: #7e7c7c;
+  border-color: #7e7c7c;
 }
 
 
@@ -482,6 +490,8 @@ icons div > * {
 
 #LAMS form button {
   font-size: 4vmin;
+  color: #7e7c7c;
+  border-color: #7e7c7c;
 }
 
 #MasterMind {
@@ -542,7 +552,9 @@ icons div > * {
 }
 
 #MasterMind form button {
-  font-size: 3vmin;
+  font-size: 3.5vmin;
+  color: #7e7c7c;
+  border-color: #7e7c7c;
 }
 
 #Contact {
@@ -569,6 +581,13 @@ icons div > * {
 
 #social-buttons form {
   margin: 1vmin;
+  
+}
+
+#social-buttons button {
+  color: #7e7c7c;
+  border-color: #7e7c7c;
+  font-size: 3vmin;
 }
 
 footer {
@@ -589,6 +608,7 @@ footer {
     flex-direction: column;
     height: 50vh; */
     font-family: 'Urbanist', sans-serif;
+    background-image: linear-gradient(160deg, #cc6c69 0%, #c2b06ef5 70%, #f7c514 98%);  
   }
   
   html {
@@ -596,7 +616,7 @@ footer {
   }
   
   #EOnavbar .navbar-brand {
-    font-size: 4.5vmin;
+    font-size: 11vmin;
     color: rgb(168, 146, 98);
     text-shadow: 1px 1px 1px #fff;
     font-family: 'Questrial', sans-serif;
@@ -607,10 +627,12 @@ footer {
     font-size: 2.5vmin;
     font-weight: bolder;
     color: white;
+    padding: 2vmin;
   }
   
   .nav-pills .nav-link.active {
     background-color: white;
+    width: fit-content;
   }
   
   .navbar-light .navbar-nav .nav-link.active {
@@ -628,6 +650,7 @@ footer {
   }
   
   #intro-div {
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -680,14 +703,14 @@ footer {
    color: white;
    font-family: 'Questrial', sans-serif;
    font-weight: bolder;
-   font-size: 6vmin;
+   font-size: 7vmin;
   }
   
   #intro-div p {
     text-align: left;
     font-weight: bold;
     color: #fff;
-    font-size: 2.5vmin;
+    font-size: 3vmin;
     display: grid;
   }
   
@@ -762,12 +785,11 @@ footer {
   }
   
   #About {
-    /* padding: 2vmin; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: cyan;
     align-content: center;
+    padding-bottom: 2vmin;
   }
   
   #About #about-h {
@@ -775,6 +797,7 @@ footer {
     text-decoration: underline;
     font-weight: bolder;
     font-size: 6vmin;
+    color:#d7fa6e;
   }
   
   .about {
@@ -789,17 +812,19 @@ footer {
     height: 40vmin;
     width: 40vmin;
     border-radius: 50%;
-    border-color: #fff;
+    border-color: white;
     border-style: solid;
     border-width: 1vmin;
     margin: 1vmin;
+    /* background-image: linear-gradient(140deg, #2a5fff 0%, #a3a3a3df 40%, #9ac001 85%); */
   }
   
   #About p {
     align-self: center;
     text-align: center;
-    font-size: 3vmin;
+    font-size: 4vmin;
     padding: 2vmin;
+    color:#d7fa6e;
   }
   
   #Skills {
@@ -828,23 +853,23 @@ footer {
   icons div {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(6, 19vw);
-    column-gap: 4vmin;
-    margin: 1vmin;
-    scale: 70%;
+    grid-template-columns: repeat(6, 15vw);
+    column-gap: 1vmin;
+    margin: 2vmin;
+    justify-items: center;
   }
   
   icons div:last-child {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 21vw);
-    scale: 70%;
-    column-gap: 4vmin;
+    grid-template-columns: repeat(3, 15vw);
+    column-gap: 1vmin;
+    justify-items: center;
   }
   
   icons div > * {
-    height: 10vh;
-    width: 10vh;
+    height: 25vh;
+    width: 25vh;
   }
   
   #Work {
@@ -878,19 +903,18 @@ footer {
   }
   
   #materialize-ic {
-    height: 8vh;
-    width: 8vmin;
+    height: 16vh;
+    width: 16vmin;
   }
   
   #mongoose-ic {
-    height: 10vh;
-    width: 15vw;
+    width: 11vw;
   }
   
   #docupets {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5vh 40vh 15vh 10vh;
+    grid-template-rows: 5vh 50vh 20vh 15vh;
   }
   
   #docupets p {
@@ -943,7 +967,7 @@ footer {
   }
   
   #docupets form button {
-    font-size: 3vmin;
+    font-size: 3.5vmin;
   }
   
   
@@ -1007,7 +1031,7 @@ footer {
   #LAMS {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 7vh 40vh 17vh 10vh;
+    grid-template-rows: 10vh 60vh 17vh 15vh;
   }
   
   #LAMS h3 {
@@ -1065,13 +1089,13 @@ footer {
   }
   
   #LAMS form button {
-    font-size: 4vmin;
+    font-size: 4.5vmin;
   }
   
   #MasterMind {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 7vh 40vh 8vh 10vh;
+    grid-template-rows: 10vh 60vh 20vh 15vh;
   }
   
   #MasterMind p {
@@ -1126,7 +1150,7 @@ footer {
   }
   
   #MasterMind form button {
-    font-size: 3vmin;
+    font-size: 4vmin;
   }
   
   #Contact {
@@ -1149,6 +1173,8 @@ footer {
   #social-buttons {
     display: flex;
     flex-direction: row;
+    width: 75%;
+    justify-content: space-evenly;
   }
   
   #social-buttons form {
@@ -1161,8 +1187,8 @@ footer {
     flex-direction: row;
     justify-content: flex-end;
   }
-  }
 
+}
 
 /* ================================== */
 
@@ -1176,6 +1202,7 @@ body {
   flex-direction: column;
   height: 50vh; */
   font-family: 'Urbanist', sans-serif;
+  background-image: linear-gradient(160deg, #cc6c69 0%, #c2b06ef5 70%, #f7c514 98%);  
 }
 
 html {
@@ -1356,7 +1383,6 @@ html {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: cyan;
 }
   
 #About #about-h {
@@ -1364,6 +1390,7 @@ html {
   text-decoration: underline;
   font-weight: bolder;
   font-size: 4vmin;
+  color:#d7fa6e;
 }
   
   
@@ -1376,15 +1403,17 @@ html {
 #headshot {
   scale: 85%;
   border-radius: 50%;
-  border-color: #fff;
+  border-color: white;
   border-style: solid;
   border-width: 1vmin;
+  /* background-image: linear-gradient(140deg, #2a5fff 0%, #a3a3a3df 40%, #9ac001 85%); */
 }
   
 #About p {
   align-self: center;
   text-align: center;
   font-size: 2.5vmin;
+  color:#d7fa6e;
 }
   
 #Skills {
@@ -1461,13 +1490,13 @@ icons div > * {
 }
   
 #materialize-ic {
-  height: 8vh;
-  width: 8vmin;
+  height: 5vh;
+  width: 5vmin;
 }
  
 #mongoose-ic {
-  height: 8vh;
-  width: 8vmin;
+  height: 6vh;
+  width: 6vmin;
 }
   
 .docupets-slideshow {
