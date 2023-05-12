@@ -264,8 +264,8 @@ icons div:last-child {
 }
 
 icons div > * {
-  height: 10vh;
-  width: 10vh;
+  height: 11vh;
+  width: 11vh;
 }
 
 #Work {
@@ -839,6 +839,7 @@ footer {
     text-decoration: underline;
     font-weight: bolder;
     font-size: 6vmin;
+    color:#d7fa6e;
   }
   
   icons {
@@ -868,8 +869,8 @@ footer {
   }
   
   icons div > * {
-    height: 25vh;
-    width: 25vh;
+    height: 12vh;
+    width: 12vh;
   }
   
   #Work {
@@ -883,6 +884,7 @@ footer {
     text-decoration: underline;
     font-weight: bolder;
     font-size: 6vmin;
+    color:#d7fa6e;
   }
   
   #Work icons {
@@ -903,8 +905,8 @@ footer {
   }
   
   #materialize-ic {
-    height: 16vh;
-    width: 16vmin;
+    height: 10vh;
+    width: 8vw;
   }
   
   #mongoose-ic {
@@ -914,14 +916,24 @@ footer {
   #docupets {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5vh 50vh 20vh 15vh;
+    grid-template-rows: 8vh 50vh 20vh 15vh;
   }
   
+  #docupets h3 {
+    text-decoration: underline;
+  }
+
   #docupets p {
     grid-column: 1;
     grid-row: 2;
     align-self: center;
     justify-self: center;
+    max-height: 100%;
+    padding: 4vmin;
+    color: #ef8354;
+    font-size: 1.4rem;
+    background-color: rgba(126, 124, 124, .9);
+    border-radius: 3vmin;
   }
   
   .docupets-slideshow {
@@ -968,6 +980,8 @@ footer {
   
   #docupets form button {
     font-size: 3.5vmin;
+    color: #7e7c7c;
+    border-color: #7e7c7c;
   }
   
   
@@ -1044,6 +1058,12 @@ footer {
     grid-row: 2;
     align-self: center;
     justify-self: center;
+    max-height: 100%;
+    padding: 4vmin;
+    color: #b00404;
+    font-size: 1.4rem;
+    background-color: rgba(126, 124, 124, .9);
+    border-radius: 3vmin;
   }
   
   .LAMS-slideshow {
@@ -1090,6 +1110,8 @@ footer {
   
   #LAMS form button {
     font-size: 4.5vmin;
+    color: #7e7c7c;
+    border-color: #7e7c7c;
   }
   
   #MasterMind {
@@ -1103,6 +1125,12 @@ footer {
     grid-row: 2;
     align-self: center;
     justify-self: center;
+    padding: 4vmin;
+    max-height: 100%;
+    color: rgb(154, 27, 47);
+    font-size: 1.4rem;
+    background-color: rgba(126, 124, 124, .9);
+    border-radius: 3vmin;
   }
   
   .MasterMind-slideshow {
@@ -1151,6 +1179,8 @@ footer {
   
   #MasterMind form button {
     font-size: 4vmin;
+    color: #7e7c7c;
+    border-color: #7e7c7c;
   }
   
   #Contact {
@@ -1168,6 +1198,7 @@ footer {
   
   #Contact p {
     text-align: center;
+    font-size: 3vmin;
   }
   
   #social-buttons {
@@ -1179,6 +1210,12 @@ footer {
   
   #social-buttons form {
     margin: 1vmin;
+  }
+
+  #social-buttons button {
+    color: #7e7c7c;
+    border-color: #7e7c7c;
+    font-size: 4vmin;
   }
   
   footer {
