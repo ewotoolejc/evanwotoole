@@ -1,4 +1,4 @@
-@media (min-width: 280px) and (max-width:767px) {
+@media (max-width:767px) {
 body {
   /* padding: 2vmin;
   padding-top: 4%; */
@@ -205,7 +205,7 @@ html {
 #headshot {
   align-self: center;
   scale: 100%;
-  height: 35vh;
+  min-height: 35vh;
   width: 70vw;
   border-radius: 50%;
   border-color: white;
@@ -236,6 +236,7 @@ html {
   text-decoration: underline;
   font-weight: bolder;
   font-size: 6vmin;
+  color:#d7fa6e;
 }
 
 icons {
@@ -264,8 +265,8 @@ icons div:last-child {
 }
 
 icons div > * {
-  height: 11vh;
-  width: 11vh;
+  height: 10vh;
+  width: 20vw;
 }
 
 #Work {
@@ -279,6 +280,7 @@ icons div > * {
   text-decoration: underline;
   font-weight: bolder;
   font-size: 6vmin;
+  color:#d7fa6e;
 }
 
 #Work icons {
@@ -311,27 +313,38 @@ icons div > * {
 #docupets {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 5vh 40vh 15vh 10vh;
+  grid-template-rows: 7vh 20vh 40vh 15vh 10vh;
+}
+
+#docupets h3 {
+  text-decoration: underline;
 }
 
 #docupets p {
-  grid-column: 1;
+  grid-column: 1/ span 2;
   grid-row: 2;
   align-self: center;
   justify-self: center;
+  text-align: center;
+  max-height: 100%;
+  padding: 2vmin;
+  color: #ef8354;
+  font-size: 1.75vh;
+  background-color: rgba(126, 124, 124, .9);
+  border-radius: 3vmin;
 }
 
 .docupets-slideshow {
-  height: 45vh;
-  width: 40vw;
+  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   animation: docupets-slideshow 30s linear infinite;
   align-self: center;
   justify-self: center;
-  grid-row: 1 / span 2;
-  grid-column: 2;
+  grid-row: 3 ;
+  grid-column: 1 / span 2;
 }
 
 @keyframes docupets-slideshow {
@@ -354,11 +367,11 @@ icons div > * {
 
 #docupets icons {
   grid-column: 1 / span 2;
-  grid-row: 3;
+  grid-row: 4;
 }
 
 #docupets form {
-  grid-row: 4;
+  grid-row: 5;
   align-self: center;
   justify-self: center;
   color: #7e7c7c;
@@ -431,32 +444,40 @@ icons div > * {
 #LAMS {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 7vh 40vh 17vh 10vh;
+  grid-template-rows: 8vh 20vh 40vh 17vh 10vh;
 }
 
 #LAMS h3 {
   grid-column: 1 /span 2;
   grid-row: 1;
+  text-decoration: underline;
 }
 
 #LAMS p {
-  grid-column: 1;
+  grid-column: 1 / span 2;
   grid-row: 2;
   align-self: center;
   justify-self: center;
+  text-align: center;
+  max-height: 100%;
+  padding: 2vmin;
+  color: #b00404;
+  font-size: 1.75vh;
+  background-color: rgba(126, 124, 124, .9);
+  border-radius: 3vmin;
 }
 
 .LAMS-slideshow {
-  height: 45vh;
-  width: 40vw;
+  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   animation: LAMS-slideshow 30s linear infinite;
   align-self: center;
   justify-self: center;
-  grid-row: 1 / span 2;
-  grid-column: 2;
+  grid-row: 3;
+  grid-column: 1 / span 2;
 }
 
 @keyframes LAMS-slideshow {
@@ -479,11 +500,11 @@ icons div > * {
 
 #LAMS icons {
   grid-column: 1 / span 2;
-  grid-row: 3;
+  grid-row: 4;
 }
 
 #LAMS form {
-  grid-row: 4;
+  grid-row: 5;
   align-self: center;
   justify-self: center;
 }
@@ -497,27 +518,38 @@ icons div > * {
 #MasterMind {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 7vh 40vh 8vh 10vh;
+  grid-template-rows: 6vh 20vh 30vh 10vh 10vh;
+}
+
+#MasterMind h3 {
+  text-decoration: underline;
 }
 
 #MasterMind p {
-  grid-column: 1;
+  grid-column: 1 /span 2;
   grid-row: 2;
   align-self: center;
   justify-self: center;
+  text-align: center;
+  padding: 2vmin;
+  max-height: 100%;
+  color: rgb(154, 27, 47);
+  font-size: 1.75vh;
+  background-color: rgba(126, 124, 124, .9);
+  border-radius: 3vmin;
 }
 
 .MasterMind-slideshow {
-  height: 45vh;
-  width: 40vw;
+  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   animation: MasterMind-slideshow 30s linear infinite;
   align-self: center;
   justify-self: center;
-  grid-row: 1 / span 2;
-  grid-column: 2;
+  grid-row: 3;
+  grid-column: 1 /span 2;
 }
 
 @keyframes MasterMind-slideshow {
@@ -540,13 +572,13 @@ icons div > * {
 
 #MasterMind icons {
   grid-column: 1 / span 2;
-  grid-row: 3;
+  grid-row: 4;
   align-self: center;
   justify-self: flex-start;
 }
 
 #MasterMind form {
-  grid-row: 4;
+  grid-row: 5;
   align-self: center;
   justify-self: center;
 }
@@ -574,14 +606,21 @@ icons div > * {
   text-align: center;
 }
 
+#contact-ptext {
+  background-color: rgba(154, 27, 47, .8);
+  padding: 1.5vmin;
+  border-radius: 2vmin;
+  color: rgb(168, 146, 98);
+  font-weight: bolder;
+}
+
 #social-buttons {
   display: flex;
   flex-direction: row;
 }
 
 #social-buttons form {
-  margin: 1vmin;
-  
+  margin: 3vmin;
 }
 
 #social-buttons button {
@@ -595,6 +634,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  font-size: 2.75vmin;
 }
 }
 /* ======================================= */
@@ -869,8 +909,8 @@ footer {
   }
   
   icons div > * {
-    height: 12vh;
-    width: 12vh;
+    height: 11vh;
+    width: 12vw;
   }
   
   #Work {
@@ -905,7 +945,7 @@ footer {
   }
   
   #materialize-ic {
-    height: 10vh;
+    height: 5vh;
     width: 8vw;
   }
   
@@ -916,7 +956,7 @@ footer {
   #docupets {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 8vh 50vh 20vh 15vh;
+    grid-template-rows: 3vmin 45vmin 9vmin 10vmin;
   }
   
   #docupets h3 {
@@ -929,16 +969,16 @@ footer {
     align-self: center;
     justify-self: center;
     max-height: 100%;
-    padding: 4vmin;
+    padding: 3vmin;
     color: #ef8354;
-    font-size: 1.4rem;
+    font-size: 2vh;
     background-color: rgba(126, 124, 124, .9);
     border-radius: 3vmin;
   }
   
   .docupets-slideshow {
-    height: 45vh;
-    width: 40vw;
+    height: 95%;
+    width: 95%;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -988,7 +1028,7 @@ footer {
   #JerseyCollector {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5vh 40vh 12vh 10vh;
+    grid-template-rows: 5vh 35vh 12vh 10vh;
   }
   
   #JerseyCollector p {
@@ -1045,12 +1085,13 @@ footer {
   #LAMS {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10vh 60vh 17vh 15vh;
+    grid-template-rows: 5vh 40vh 8vh 10vh;
   }
   
   #LAMS h3 {
     grid-column: 1 /span 2;
     grid-row: 1;
+    text-decoration: underline;
   }
   
   #LAMS p {
@@ -1061,21 +1102,21 @@ footer {
     max-height: 100%;
     padding: 4vmin;
     color: #b00404;
-    font-size: 1.4rem;
+    font-size: 2vh;
     background-color: rgba(126, 124, 124, .9);
     border-radius: 3vmin;
   }
   
   .LAMS-slideshow {
-    height: 45vh;
-    width: 40vw;
+    height: 95%;
+    width: 95%;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     animation: LAMS-slideshow 30s linear infinite;
     align-self: center;
     justify-self: center;
-    grid-row: 1 / span 2;
+    grid-row: 2;
     grid-column: 2;
   }
   
@@ -1117,7 +1158,11 @@ footer {
   #MasterMind {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10vh 60vh 20vh 15vh;
+    grid-template-rows: 5vh 45vh 7vh 10vh;
+  }
+
+  #MasterMind h3 {
+    text-decoration: underline;
   }
   
   #MasterMind p {
@@ -1128,21 +1173,21 @@ footer {
     padding: 4vmin;
     max-height: 100%;
     color: rgb(154, 27, 47);
-    font-size: 1.4rem;
+    font-size: 2vh;
     background-color: rgba(126, 124, 124, .9);
     border-radius: 3vmin;
   }
   
   .MasterMind-slideshow {
-    height: 45vh;
-    width: 40vw;
+    height: 95%;
+    width: 95%;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     animation: MasterMind-slideshow 30s linear infinite;
     align-self: center;
     justify-self: center;
-    grid-row: 1 / span 2;
+    grid-row: 2;
     grid-column: 2;
   }
   
@@ -1209,7 +1254,7 @@ footer {
   }
   
   #social-buttons form {
-    margin: 1vmin;
+    margin: 2vmin;
   }
 
   #social-buttons button {
@@ -1223,6 +1268,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    font-size: 3.5vmin;
   }
 
 }
