@@ -213,7 +213,10 @@ html {
   border-width: 1vmin;
   margin: 1vmin;
   /* background-image: linear-gradient(140deg, #2a5fff 0%, #a3a3a3df 40%, #9ac001 85%); */
-  
+}
+
+.hsactive {
+  animation: zoom-in-zoom-out 1s ease;
 }
 
 #About p {
@@ -861,6 +864,10 @@ footer {
     /* background-image: linear-gradient(140deg, #2a5fff 0%, #a3a3a3df 40%, #9ac001 85%); */
   }
   
+  .hsactive {
+    animation: zoom-in-zoom-out 1s ease;
+  }
+
   #About p {
     align-self: center;
     text-align: center;
@@ -1506,6 +1513,23 @@ html {
   border-width: 1vmin;
   margin: 1vmin;
   /* background-image: linear-gradient(140deg, #2a5fff 0%, #a3a3a3df 40%, #9ac001 85%); */
+
+}
+
+.hsactive {
+  animation: zoom-in-zoom-out 1s ease;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.25, 1.25);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
 #About p {
@@ -1541,6 +1565,10 @@ icons {
   align-items: center;
 }
 
+.iconsfadein {
+  animation: icons-fade-in 2.5s ease;
+}
+
 icons div {
   display: grid;
   grid-template-rows: 1fr;
@@ -1561,6 +1589,11 @@ icons div:last-child {
 icons div > * {
   height: 9.5rem;
   width: 9.5rem;
+}
+
+@keyframes icons-fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 #Work {
@@ -1607,7 +1640,7 @@ icons div > * {
 #docupets {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 10vmin 45vmin 11vmin 11vmin 11vmin;
+  grid-template-rows: 6vmin 45vmin 11vmin 11vmin 11vmin;
 }
 
 #docupets h3 {
@@ -1615,6 +1648,7 @@ icons div > * {
   grid-row: 1;
   text-decoration: underline;
   justify-self: center;
+  align-self: center;
 }
 
 #docupets p {
@@ -1639,7 +1673,7 @@ icons div > * {
   animation: docupets-slideshow 30s linear infinite;
   align-self: center;
   justify-self: center;
-  grid-row: 1 / span 2;
+  grid-row: 2;
   grid-column: 1;
 }
 
@@ -1672,7 +1706,7 @@ icons div > * {
 #docupets form {
   grid-column: 2;
   align-self: center;
-  justify-self: center;
+  justify-self: flex-end;
 }
 
 #docupets form button {
@@ -1742,13 +1776,14 @@ icons div > * {
 #LAMS {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 10vmin 45vmin 10vmin 11vmin 11vmin;
+  grid-template-rows: 6vmin 45vmin 10vmin 11vmin 11vmin;
 }
 
 #LAMS h3 {
   grid-column: 1 /span 2;
   grid-row: 1;
   text-decoration: underline;
+  align-self: center;
 }
 
 #LAMS p {
@@ -1803,11 +1838,19 @@ icons div > * {
 #LAMS form {
   grid-column: 1;
   align-self: center;
-  justify-self: center;
+  justify-self: flex-start;
+}
+
+#LAMS .form1 {
+  grid-row: 4;
+}
+
+#LAMS .form2 {
+  grid-row: 5;
 }
 
 #LAMS form button {
-  font-size: 4.5vmin;
+  font-size: 3.5vmin;
   color: #7e7c7c;
   border-color: #7e7c7c;
 }
@@ -1815,15 +1858,18 @@ icons div > * {
 #MasterMind {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 10vmin 45vmin 16vmin 16vmin;
+  grid-template-rows: 6vmin 45vmin 10vmin 11vmin 11vmin;
 }
 
 #MasterMind h3 {
+  grid-column: 2;
   text-decoration: underline;
+  justify-self: center;
+  align-self: center;
 }
 
 #MasterMind p {
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 2;
   align-self: center;
   justify-self: center;
@@ -1845,7 +1891,7 @@ icons div > * {
   align-self: center;
   justify-self: center;
   grid-row: 2;
-  grid-column: 2;
+  grid-column: 1;
 }
 
 @keyframes MasterMind-slideshow {
@@ -1867,20 +1913,30 @@ icons div > * {
 }
 
 #MasterMind icons {
-  grid-column: 1 / span 2;
+  grid-column: 2 / span 2;
+  display: flex;
+  flex-direction: row-reverse;
   grid-row: 3;
   align-self: center;
-  justify-self: flex-start;
+  justify-self: flex-end;
 }
 
-#MasterMind form {
+#MasterMind .form1 {
   grid-row: 4;
+  grid-column: 2;
   align-self: center;
-  justify-self: center;
+  justify-self: flex-end;
+}
+
+#MasterMind .form2 {
+  grid-row: 5;
+  grid-column: 2;
+  align-self: center;
+  justify-self: flex-end;
 }
 
 #MasterMind form button {
-  font-size: 4vmin;
+  font-size: 3.5vmin;
   color: #7e7c7c;
   border-color: #7e7c7c;
 }

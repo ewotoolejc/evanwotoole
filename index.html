@@ -53,7 +53,7 @@
       <p>
       <span id="intro-h">Evan O'Toole</span>
       <br>
-        Is an Atlanta-based former Customer Success Executive become Software Developer who
+        Is an Atlanta-based, former Customer Success Executive become Software Developer who
         <br>
         <span id="rotating-text">
           <span>is driven to code and build. <i class="bi-code-square"></i></span>
@@ -80,7 +80,7 @@
     <hr>
     <div id="Skills" >
       <p>Skills & Tools</p>
-      <icons>
+      <icons id="skill-icons">
         <div>
           <img src="https://icongr.am/devicon/apple-original.svg?size=100&color=9c9c9c">
           <img src="https://icongr.am/devicon/atom-original-wordmark.svg?size=128">
@@ -126,7 +126,7 @@
       <div id="docupets">
         <h3>DocuPets</h3>
         <p>
-          DocuPets is a MyChart inspired app. It was developed with the idea to have all the information about pets in one convenient and accessible at any time. With DocuPets, you can easily add your favorite Veterinary Doctor(s), keep track of your pet’s visit, vaccines, and groomings. (This was a group designed and coded application.)
+          DocuPets is a "MyChart" inspired app that was developed with the idea to have all the information about one's pet(s) in one convenient and accessible repository at any time. With DocuPets, you can easily add your favorite Veterinary Doctor(s), keep track of your pet’s visits, vaccines, and groomings. (This was a group designed and coded application.)
         </p>
         <div class="docupets-slideshow"></div>
         <br>
@@ -177,7 +177,7 @@
       <div id="LAMS">
         <h3>LAMS: The Label Artist Management System</h3>
         <p>
-          LAMS, the Label Artist Management System, was designed to give Record Labels and/or Artist Management organizations an easy way to contain all information regarding Artists' they manage, any they would like to sign, and manage Deals & Partnerships acquired for their signed artists.
+          LAMS was designed to give Record Labels and/or Artist Management organizations an easy way to put at their fingertips all the information regarding the Artists' they manage, any they would like to sign, and the Deals/Partnerships they acquired for their signed artists.
         </p>
         <div class="LAMS-slideshow"></div>
         <br>
@@ -193,10 +193,10 @@
           <img src="https://icongr.am/material/monitor-cellphone.svg?size=50&color=7e7c7c">
           <img src="https://icongr.am/devicon/heroku-plain.svg?size=50&color=7e7c7c">
         </icons>
-        <form action="https://lams-proj-2.herokuapp.com/" target=”_blank”>
+        <form class='form1' action="https://lams-proj-2.herokuapp.com/" target=”_blank”>
           <button class="btn btn-outline-dark" type="submit">Check out LAMS <img src="https://icongr.am/material/sheep.svg?size=30&color=7e7c7c"></button>
         </form>
-        <form action="https://github.com/ewotoolejc/LAMS-Proj-2" target=”_blank”>
+        <form class="'form2" action="https://github.com/ewotoolejc/LAMS-Proj-2" target=”_blank”>
           <button class="btn btn-outline-dark" type="submit">GitHub Repo <img src="https://icongr.am/material/github.svg?size=30&color=7e7c7c"></button>
         </form>
       </div>
@@ -204,7 +204,7 @@
       <div id="MasterMind">
         <h3>AUFC MasterMind</h3>
         <p>
-          MasterMind is "code breaker" or sequence guessing challenge using colored "pegs" on a board that is 4 pegs across and can be up to 12 guesses long. This version uses 6 color options stemming from Atlanta United FC colors and 6 rows in which to make guesses. Also, this version allows for multiples of colors (typically a house rule setup in person).
+          MasterMind is a "code breaker" or sequence guessing challenge game using colored "pegs" on a board that is 4 pegs across and can be up to 12 guesses long. This version uses 6 color options stemming from Atlanta United FC colors and 6 rows in which to make guesses. Also, this version allows for multiples of the same color in the answer (typically a house rule setup in person).
         </p>
         <div class="MasterMind-slideshow"></div>
         <icons>
@@ -214,10 +214,10 @@
           <img src="https://icongr.am/material/monitor-cellphone.svg?size=50&color=7e7c7c">
           <img src="https://icongr.am/material/github.svg?size=50&color=7e7c7c">
         </icons>
-        <form action="https://ewotoolejc.github.io/MasterMind-Proj-1/" target=”_blank”>
+        <form class='form1' action="https://ewotoolejc.github.io/MasterMind-Proj-1/" target=”_blank”>
           <button class="btn btn-outline-dark" type="submit">Check out MasterMind <img src="https://icongr.am/material/table-large.svg?size=30&color=7e7c7c"></button>
         </form>
-        <form action="https://github.com/ewotoolejc/MasterMind-Proj-1" target=”_blank”>
+        <form class='form2' action="https://github.com/ewotoolejc/MasterMind-Proj-1" target=”_blank”>
           <button class="btn btn-outline-dark" type="submit">GitHub Repo <img src="https://icongr.am/material/github.svg?size=30&color=7e7c7c"></button>
         </form>
       </div>
@@ -244,6 +244,8 @@
     </footer>
     <script>
     const nav = document.getElementById('EOnavbar');
+    const hs = document.getElementById('headshot');
+    const skicons = document.getElementById('skill-icons')
     window.onscroll = function () { 
     if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
         nav.classList.add("nav-colored");
@@ -253,8 +255,20 @@
         nav.classList.add("nav-transparent");
         nav.classList.remove("nav-colored");
     }
+    if (document.body.scrollTop >= 325 || document.documentElement.scrollTop >= 325) {
+        hs.classList.add("hsactive");
+    } 
+    else {
+        hs.classList.remove("hsactive");
     };
-        </script>
+    if (document.body.scrollTop >= 700|| document.documentElement.scrollTop >= 700) {
+        skicons.classList.add("iconsfadein");
+    } 
+    else {
+        skicons.classList.remove("iconsfadein");
+    };
+  };
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
