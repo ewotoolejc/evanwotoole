@@ -39,10 +39,10 @@
                 <a class="nav-link" href="#Contact">Contact</a>
               </li>
             </ul>
-             <form class="d-flex">
+             <!-- <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            </form> -->
           </div>
         </div>
       </nav>
@@ -124,7 +124,7 @@
     <div id="Work">
       <p id="work-p">Work</p>
       <div id="docupets">
-        <h3>DocuPets</h3>
+        <div class="proj-title">DocuPets</div>
         <p>
           DocuPets is a "MyChart" inspired app that was developed with the idea to have all the information about one's pet(s) in one convenient and accessible repository at any time. With DocuPets, you can easily add your favorite Veterinary Doctor(s), keep track of your pet’s visits, vaccines, and groomings. (This was a group designed and coded application.)
         </p>
@@ -150,7 +150,7 @@
       </div>
       <hr>
       <!-- <div id="JerseyCollector">
-        <h3>Jersey Collector</h3>
+        <div class="proj-title">Jersey Collector</div>
         <p>
           Placehold for Descrip
         </p>
@@ -175,7 +175,7 @@
       </div>
       <hr> -->
       <div id="LAMS">
-        <h3>LAMS: The Label Artist Management System</h3>
+        <div class="proj-title">LAMS: The Label Artist Management System</div>
         <p>
           LAMS was designed to give Record Labels and/or Artist Management organizations an easy way to put at their fingertips all the information regarding the Artists' they manage, any they would like to sign, and the Deals/Partnerships they acquired for their signed artists.
         </p>
@@ -202,7 +202,7 @@
       </div>
       <hr>
       <div id="MasterMind">
-        <h3>AUFC MasterMind</h3>
+        <div class="proj-title">AUFC MasterMind</div>
         <p>
           MasterMind is a "code breaker" or sequence guessing challenge game using colored "pegs" on a board that is 4 pegs across and can be up to 12 guesses long. This version uses 6 color options stemming from Atlanta United FC colors and 6 rows in which to make guesses. Also, this version allows for multiples of the same color in the answer (typically a house rule setup in person).
         </p>
@@ -261,11 +261,17 @@
     else {
         hs.classList.remove("hsactive");
     };
-    if (document.body.scrollTop >= 700|| document.documentElement.scrollTop >= 700) {
+    if (document.body.scrollTop >= 550|| document.documentElement.scrollTop >= 550) {
         skicons.classList.add("iconsfadein");
     } 
     else {
         skicons.classList.remove("iconsfadein");
+    };
+    if (document.body.scrollTop >= 1750|| document.documentElement.scrollTop >= 1750) {
+        skicons.classList.add("iconsfadeout");
+    } 
+    else {
+        skicons.classList.remove("iconsfadeout");
     };
   };
     </script>
