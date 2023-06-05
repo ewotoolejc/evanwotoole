@@ -241,6 +241,10 @@ html {
   color: #59e39f;
 }
 
+hr {
+  color: #59e39f;
+}
+
 #Skills {
   padding: 2vmin;
   display: flex;
@@ -1001,6 +1005,10 @@ html {
   text-align: center;
   font-size: 1.75rem;
   padding: 2vmin;
+  color: #59e39f;
+}
+
+hr {
   color: #59e39f;
 }
 
@@ -1769,6 +1777,10 @@ html {
   padding: 2vmin;
   /* color:#d7fa6e; */
   /* color:#b00404; */
+  color: #59e39f;
+}
+
+hr {
   color: #59e39f;
 }
 
