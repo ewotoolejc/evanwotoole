@@ -7,7 +7,8 @@ body {
   flex-direction: column;
   height: 50vh; */
   font-family: 'Urbanist', sans-serif;
-  background-image: linear-gradient(160deg, #cc6c69 0%, #c2b06ef5 70%, #f7c514 98%);  
+  /* background-image: linear-gradient(160deg, #cc6c69 0%, #c2b06ef5 70%, #f7c514 98%);   */
+  background: linear-gradient(80deg, rgba(79,71,137,1) 40%, rgba(32,19,53,1) 81%);
 }
 
 html {
@@ -193,7 +194,8 @@ html {
   align-self: center;
   text-decoration: underline;
   font-weight: bolder;
-  color:#d7fa6e;
+  color: #59e39f;
+  text-shadow: 1.5px 1.5px 1.5px rgb(168, 146, 98);
   font-size: 6vmin;
 }
 
@@ -236,7 +238,7 @@ html {
   text-align: center;
   font-size: 3vmin;
   padding: 2vmin;
-  color:#d7fa6e;
+  color: #59e39f;
 }
 
 #Skills {
@@ -251,7 +253,8 @@ html {
   text-decoration: underline;
   font-weight: bolder;
   font-size: 6vmin;
-  color:#d7fa6e;
+  color: #59e39f;
+  text-shadow: 1.5px 1.5px 1.5px rgb(168, 146, 98);
 }
 
 icons {
@@ -261,6 +264,12 @@ icons {
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
+}
+
+#skill-icons {
+  background-color: rgba(255,255,255, .7);
+  border-radius: 3vmin;
+  padding: 2vmin;
 }
 
 .iconsfadein {
@@ -309,6 +318,7 @@ icons div > * {
 }
 
 .proj-title {
+color: #59e39f;
 font-size: 4.5vmin;
 text-decoration: underline;
 }
@@ -318,7 +328,8 @@ text-decoration: underline;
   text-decoration: underline;
   font-weight: bolder;
   font-size: 6vmin;
-  color:#d7fa6e;
+  color: #59e39f;
+  text-shadow: 1.5px 1.5px 1.5px rgb(168, 146, 98);
 }
 
 #Work icons {
@@ -413,8 +424,8 @@ text-decoration: underline;
 
 #powepal form button {
   font-size: 3.5vmin;
-  color: #7e7c7c;
-  border-color: #7e7c7c;
+  color: #59e39f;
+  border-color: #59e39f;
 }
 
 
@@ -483,8 +494,8 @@ text-decoration: underline;
 
 #docupets form button {
   font-size: 3.5vmin;
-  color: #7e7c7c;
-  border-color: #7e7c7c;
+  color: #59e39f;
+  border-color: #59e39f;
 }
 
 
@@ -615,8 +626,8 @@ text-decoration: underline;
 
 #LAMS form button {
   font-size: 4vmin;
-  color: #7e7c7c;
-  border-color: #7e7c7c;
+  color: #59e39f;
+  border-color: #59e39f;
 }
 
 #MasterMind {
@@ -685,8 +696,8 @@ text-decoration: underline;
 
 #MasterMind form button {
   font-size: 3.5vmin;
-  color: #7e7c7c;
-  border-color: #7e7c7c;
+  color: #59e39f;
+  border-color: #59e39f;
 }
 
 #Contact {
@@ -700,36 +711,40 @@ text-decoration: underline;
   text-decoration: underline;
   font-weight: bolder;
   font-size: 6vmin;
-  color:#d7fa6e;
-  text-shadow: 1px 1px 1px black;
+  /* color:#d7fa6e; */
+  color: #59e39f;
+  text-shadow: 1.5px 1.5px 1.5px rgb(168, 146, 98);
 }
 
 #Contact p {
   text-align: center;
+  font-size: 3vmin;
 }
 
 #contact-ptext {
   background-color: rgba(154, 27, 47, .8);
   padding: 1.5vmin;
   border-radius: 2vmin;
-  color: rgb(168, 146, 98);
   font-size: 3vmin;
+  color: rgb(168, 146, 98);
   font-weight: bolder;
 }
 
 #social-buttons {
   display: flex;
   flex-direction: row;
+  width: 75%;
+  justify-content: space-evenly;
 }
 
 #social-buttons form {
-  margin: 3vmin;
+  margin: 2vmin;
 }
 
 #social-buttons button {
-  color: #7e7c7c;
-  border-color: #7e7c7c;
-  font-size: 3vmin;
+  color: #59e39f;
+  border-color: #59e39f;
+  font-size: 4vmin;
 }
 
 footer {
@@ -737,10 +752,11 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  font-size: 2.75vmin;
+  font-size: 2.5vmin;
+  color: #59e39f;
 }
 }
-/* ======================================= */
+/* ====================================================================== */
 
 @media (min-width: 768px) and (max-width:1000px) {
 body {
@@ -751,7 +767,8 @@ body {
   flex-direction: column;
   height: 50vh; */
   font-family: 'Urbanist', sans-serif;
-  background-image: linear-gradient(160deg, #cc6c69 0%, #c2b06ef5 70%, #f7c514 98%);  
+  /* background-image: linear-gradient(160deg, #cc6c69 0%, #c2b06ef5 70%, #f7c514 98%);   */
+  background: linear-gradient(80deg, rgba(79,71,137,1) 40%, rgba(32,19,53,1) 81%);
 }
 
 html {
@@ -940,7 +957,8 @@ html {
   text-decoration: underline;
   font-weight: bolder;
   font-size: 4vmin;
-  color:#d7fa6e;
+  color: #59e39f;
+  text-shadow: 1.5px 1.5px 1.5px rgb(168, 146, 98);
 }
 
 .about {
@@ -983,7 +1001,7 @@ html {
   text-align: center;
   font-size: 1.75rem;
   padding: 2vmin;
-  color:#d7fa6e;
+  color: #59e39f;
 }
 
 #Skills {
@@ -998,7 +1016,8 @@ html {
   text-decoration: underline;
   font-weight: bolder;
   font-size: 6vmin;
-  color:#d7fa6e;
+  color: #59e39f;
+  text-shadow: 1.5px 1.5px 1.5px rgb(168, 146, 98);
 }
 
 icons {
@@ -1008,6 +1027,12 @@ icons {
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
+}
+
+#skill-icons {
+  background-color: rgba(255,255,255, .7);
+  border-radius: 3vmin;
+  padding: 2vmin;
 }
 
 .iconsfadein {
@@ -1061,10 +1086,12 @@ icons div > * {
   text-decoration: underline;
   font-weight: bolder;
   font-size: 6vmin;
-  color:#d7fa6e;
+  color: #59e39f;
+  text-shadow: 1.5px 1.5px 1.5px rgb(168, 146, 98);
 }
 
 .proj-title {
+color: #59e39f;
 font-size: 4.5vmin;
 text-decoration: underline;
 }
@@ -1158,8 +1185,8 @@ text-decoration: underline;
 
 #powepal form button {
   font-size: 3.5vmin;
-  color: #7e7c7c;
-  border-color: #7e7c7c;
+  color: #59e39f;
+  border-color: #59e39f;
 }
 
 #docupets {
@@ -1225,8 +1252,8 @@ text-decoration: underline;
 
 #docupets form button {
   font-size: 3.5vmin;
-  color: #7e7c7c;
-  border-color: #7e7c7c;
+  color: #59e39f;
+  border-color: #59e39f;
 }
 
 
@@ -1356,8 +1383,8 @@ text-decoration: underline;
 
 #LAMS form button {
   font-size: 4.5vmin;
-  color: #7e7c7c;
-  border-color: #7e7c7c;
+  color: #59e39f;
+  border-color: #59e39f;
 }
 
 #MasterMind {
@@ -1425,8 +1452,8 @@ text-decoration: underline;
 
 #MasterMind form button {
   font-size: 4vmin;
-  color: #7e7c7c;
-  border-color: #7e7c7c;
+  color: #59e39f;
+  border-color: #59e39f;
 }
 
 #Contact {
@@ -1440,9 +1467,9 @@ text-decoration: underline;
   text-decoration: underline;
   font-weight: bolder;
   font-size: 6vmin;
-  color:#d7fa6e;
-text-shadow: 1px 1px 1px black;
-
+  /* color:#d7fa6e; */
+  color: #59e39f;
+  text-shadow: 1.5px 1.5px 1.5px rgb(168, 146, 98);
 }
 
 #Contact p {
@@ -1471,8 +1498,8 @@ text-shadow: 1px 1px 1px black;
 }
 
 #social-buttons button {
-  color: #7e7c7c;
-  border-color: #7e7c7c;
+  color: #59e39f;
+  border-color: #59e39f;
   font-size: 4vmin;
 }
 
@@ -1481,12 +1508,13 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  font-size: 3.5vmin;
+  font-size: 2.5vmin;
+  color: #59e39f;
 }
 
 }
 
-/* ================================== */
+/* ============================================================================== */
 
 @media (min-width: 1001px) {
 body {
@@ -1497,7 +1525,8 @@ body {
   flex-direction: column;
   height: 50vh; */
   font-family: 'Urbanist', sans-serif;
-  background-image: linear-gradient(160deg, #cc6c69 0%, #c2b06ef5 70%, #f7c514 98%);  
+  background: linear-gradient(80deg, rgba(79,71,137,1) 40%, rgba(32,19,53,1) 81%);
+  /* background-image: linear-gradient(160deg, #cc6c69 0%, #c2b06ef5 70%, #f7c514 98%);   */
   /* background: linear-gradient(68deg, rgba(16,255,230,1) 17%, rgba(4,17,219,1) 52%, rgba(213,46,247,1) 85%); */
 }
 
@@ -1692,7 +1721,9 @@ html {
   text-decoration: underline;
   font-weight: bolder;
   font-size: 6vmin;
-  color:#d7fa6e;
+  /* color:#d7fa6e; */
+  color: #59e39f;
+  text-shadow: 1.5px 1.5px 1.5px rgb(168, 146, 98);
 }
 
 .about {
@@ -1737,7 +1768,8 @@ html {
   font-size: 1.75rem;
   padding: 2vmin;
   /* color:#d7fa6e; */
-  color:#b00404;
+  /* color:#b00404; */
+  color: #59e39f;
 }
 
 #Skills {
@@ -1752,7 +1784,9 @@ html {
   text-decoration: underline;
   font-weight: bolder;
   font-size: 6vmin;
-  color:#d7fa6e;
+  /* color:#d7fa6e; */
+  color: #59e39f;
+  text-shadow: 1.5px 1.5px 1.5px rgb(168, 146, 98);
 }
 
 icons {
@@ -1762,6 +1796,12 @@ icons {
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
+}
+
+#skill-icons {
+  background-color: rgba(255,255,255, .7);
+  border-radius: 3vmin;
+  padding: 2vmin;
 }
 
 .iconsfadein {
@@ -1815,12 +1855,16 @@ icons div > * {
   text-decoration: underline;
   font-weight: bolder;
   font-size: 6vmin;
-  color:#d7fa6e;
+  /* color:#d7fa6e; */
+  color: #59e39f;
+  text-shadow: 1.5px 1.5px 1.5px rgb(168, 146, 98);
 }
 
 .proj-title {
+  color: #59e39f;
   font-size: 4.5vmin;
   text-decoration: underline;
+
   }
 
 #Work icons {
@@ -1924,8 +1968,8 @@ icons div > * {
 
 #powepal form button {
   font-size: 3.5vmin;
-  color: #7e7c7c;
-  border-color: #7e7c7c;
+  color: #59e39f;
+  border-color: #59e39f;
 }
 
 #docupets {
@@ -2002,8 +2046,8 @@ icons div > * {
 
 #docupets form button {
   font-size: 3.5vmin;
-  color: #7e7c7c;
-  border-color: #7e7c7c;
+  color: #59e39f;
+  border-color: #59e39f;
 }
 
 
@@ -2142,8 +2186,8 @@ icons div > * {
 
 #LAMS form button {
   font-size: 3.5vmin;
-  color: #7e7c7c;
-  border-color: #7e7c7c;
+  color: #59e39f;
+  border-color: #59e39f;
 }
 
 #MasterMind {
@@ -2228,8 +2272,8 @@ icons div > * {
 
 #MasterMind form button {
   font-size: 3.5vmin;
-  color: #7e7c7c;
-  border-color: #7e7c7c;
+  color: #59e39f;
+  border-color: #59e39f;
 }
 
 #Contact {
@@ -2243,9 +2287,9 @@ icons div > * {
   text-decoration: underline;
   font-weight: bolder;
   font-size: 6vmin;
-  color:#d7fa6e;
-text-shadow: 1px 1px 1px black;
-
+  /* color:#d7fa6e; */
+  color: #59e39f;
+  text-shadow: 1.5px 1.5px 1.5px rgb(168, 146, 98);
 }
 
 #Contact p {
@@ -2274,8 +2318,8 @@ text-shadow: 1px 1px 1px black;
 }
 
 #social-buttons button {
-  color: #7e7c7c;
-  border-color: #7e7c7c;
+  color: #59e39f;
+  border-color: #59e39f;
   font-size: 4vmin;
 }
 
@@ -2285,6 +2329,6 @@ footer {
   flex-direction: row;
   justify-content: flex-end;
   font-size: 2.5vmin;
+  color: #59e39f;
 }
-
 }
