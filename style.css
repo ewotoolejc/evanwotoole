@@ -264,6 +264,40 @@ hr {
   font-size: 6vmin;
 }
 
+.comment_image_slideshow {
+  height: 40vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+  animation: com-slideshow 70s linear infinite;
+}
+
+@keyframes com-slideshow {
+  0% {
+    /* KG */
+    background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/Comments/KG-Praise-Apr-2024-edited.png');
+  }
+  20% {
+    /* AP */
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/AP-Praise.png");
+  }
+  40% {
+    /* KB */
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/KB-Praise.png");
+  }
+  60% {
+    /* KH-WF */
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/KH-WF.png");
+  }
+  80% {
+    /* RJ */
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/RJ-Praise-edited.jpg");
+  }
+  100% {
+    background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/Comments/KG-Praise-Apr-2024-edited.png');
+  }
+}
 
 #Skills {
   padding: 2vmin;
@@ -1047,6 +1081,41 @@ hr {
   font-size: 4vmin;
   color: #59e39f;
   text-shadow: 1.5px 1.5px 1.5px rgb(168, 146, 98);
+}
+
+.comment_image_slideshow {
+  height: 40vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+  animation: com-slideshow 70s linear infinite;
+}
+
+@keyframes com-slideshow {
+  0% {
+    /* KG */
+    background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/Comments/KG-Praise-Apr-2024-edited.png');
+  }
+  20% {
+    /* AP */
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/AP-Praise.png");
+  }
+  40% {
+    /* KB */
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/KB-Praise.png");
+  }
+  60% {
+    /* KH-WF */
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/KH-WF.png");
+  }
+  80% {
+    /* RJ */
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/RJ-Praise-edited.jpg");
+  }
+  100% {
+    background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/Comments/KG-Praise-Apr-2024-edited.png');
+  }
 }
 
 #Skills {
@@ -1845,7 +1914,7 @@ hr {
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: center;
-  animation: com-slideshow 80s linear infinite;
+  animation: com-slideshow 70s linear infinite;
 }
 
 @keyframes com-slideshow {
@@ -1873,7 +1942,6 @@ hr {
     background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/Comments/KG-Praise-Apr-2024-edited.png');
   }
 }
-
 
 #Skills {
   padding: 2vmin;
