@@ -1841,7 +1841,7 @@ hr {
 
 .comment_image_slideshow {
   height: 60vh;
-  width: 100%;
+  width: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1862,7 +1862,7 @@ hr {
     background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/KB-Praise.png");
   }
   75% {
-    /* SJ USVI */
+    /* KH-WF */
     background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/KH-WF.png");
   }
   100% {
