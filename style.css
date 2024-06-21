@@ -249,6 +249,22 @@ hr {
   color: #59e39f;
 }
 
+#saying {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#saying #saying-h {
+  align-self: center;
+  text-decoration: underline;
+  font-weight: bolder;
+  color: #59e39f;
+  text-shadow: 1.5px 1.5px 1.5px rgb(168, 146, 98);
+  font-size: 6vmin;
+}
+
+
 #Skills {
   padding: 2vmin;
   display: flex;
@@ -1014,6 +1030,23 @@ html {
 
 hr {
   color: #59e39f;
+}
+
+#saying {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  padding-bottom: 2vmin;
+}
+
+#saying #saying-h {
+  align-self: center;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 4vmin;
+  color: #59e39f;
+  text-shadow: 1.5px 1.5px 1.5px rgb(168, 146, 98);
 }
 
 #Skills {
@@ -1787,6 +1820,56 @@ html {
 hr {
   color: #59e39f;
 }
+
+#saying {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  padding-bottom: 2vmin;
+}
+
+#saying #saying-h {
+  align-self: center;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 6vmin;
+  /* color:#d7fa6e; */
+  color: #59e39f;
+  text-shadow: 1.5px 1.5px 1.5px rgb(168, 146, 98);
+}
+
+.comment_image_slideshow {
+  height: 60vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: com-slideshow 60s linear infinite;
+}
+
+@keyframes com-slideshow {
+  0% {
+    /* KG */
+    background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/Comments/KG-Praise-Apr-2024-edited.png');
+  }
+  25% {
+    /* AP */
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/AP-Praise.png");
+  }
+  50% {
+    /* KB */
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/KB-Praise.png");
+  }
+  75% {
+    /* SJ USVI */
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/KH-WF.png");
+  }
+  100% {
+    background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/Comments/KG-Praise-Apr-2024-edited.png');
+  }
+}
+
 
 #Skills {
   padding: 2vmin;
