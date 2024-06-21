@@ -1840,12 +1840,12 @@ hr {
 }
 
 .comment_image_slideshow {
-  height: 60vh;
-  width: 50%;
+  height: 40vh;
+  width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 75%;
   background-position: center;
-  animation: com-slideshow 60s linear infinite;
+  animation: com-slideshow 80s linear infinite;
 }
 
 @keyframes com-slideshow {
@@ -1853,17 +1853,21 @@ hr {
     /* KG */
     background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/Comments/KG-Praise-Apr-2024-edited.png');
   }
-  25% {
+  20% {
     /* AP */
     background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/AP-Praise.png");
   }
-  50% {
+  40% {
     /* KB */
     background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/KB-Praise.png");
   }
-  75% {
+  60% {
     /* KH-WF */
     background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/KH-WF.png");
+  }
+  80% {
+    /* RJ */
+    background-image: url("https://ewotoolejc.github.io/evanwotoole/assets/Comments/RJ-Praise-edited.jpg");
   }
   100% {
     background-image: url('https://ewotoolejc.github.io/evanwotoole/assets/Comments/KG-Praise-Apr-2024-edited.png');
