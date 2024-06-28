@@ -245,6 +245,13 @@ html {
   color: #59e39f;
 }
 
+#About #vid {
+  align-self: center;
+  justify-self: center;
+  width: 80%;
+  height: 40vmin;
+}
+
 hr {
   color: #59e39f;
 }
@@ -257,6 +264,7 @@ hr {
 
 #saying #saying-h {
   align-self: center;
+  text-align: center;
   text-decoration: underline;
   font-weight: bolder;
   color: #59e39f;
@@ -1062,6 +1070,13 @@ html {
   color: #59e39f;
 }
 
+#About #vid {
+  align-self: center;
+  justify-self: center;
+  width: 80%;
+  height: 40vmin;
+}
+
 hr {
   color: #59e39f;
 }
@@ -1076,6 +1091,7 @@ hr {
 
 #saying #saying-h {
   align-self: center;
+  text-align: center;
   text-decoration: underline;
   font-weight: bolder;
   font-size: 4vmin;
@@ -1884,6 +1900,13 @@ html {
   /* color:#d7fa6e; */
   /* color:#b00404; */
   color: #59e39f;
+}
+
+#About #vid {
+  align-self: center;
+  justify-self: center;
+  width: 80%;
+  height: 40vmin;
 }
 
 hr {
