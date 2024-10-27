@@ -9,6 +9,7 @@ body {
   font-family: 'Urbanist', sans-serif;
   /* background-image: linear-gradient(160deg, #cc6c69 0%, #c2b06ef5 70%, #f7c514 98%);   */
   background: linear-gradient(80deg, rgba(79,71,137,1) 40%, rgba(32,19,53,1) 81%);
+  background-repeat: no-repeat;
 }
 
 html {
@@ -119,7 +120,7 @@ html {
 
 #rotating-text span{
   position: absolute;
-  white-space: nowrap;
+  white-space: normal;
   opacity: 0;
   animation: rotating-text 40s linear infinite;
 }
@@ -247,8 +248,7 @@ html {
 
 #About #vid {
   align-self: center;
-  justify-self: center;
-  width: 80%;
+  width: 60%;
   height: 40vmin;
 }
 
@@ -273,12 +273,12 @@ hr {
 }
 
 .comment_image_slideshow {
-  height: 40vh;
+  height: 20vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: center;
-  animation: com-slideshow 70s linear infinite;
+  animation: com-slideshow 100s linear infinite;
 }
 
 @keyframes com-slideshow {
@@ -835,6 +835,7 @@ body {
   font-family: 'Urbanist', sans-serif;
   /* background-image: linear-gradient(160deg, #cc6c69 0%, #c2b06ef5 70%, #f7c514 98%);   */
   background: linear-gradient(80deg, rgba(79,71,137,1) 40%, rgba(32,19,53,1) 81%);
+  background-repeat: no-repeat;
 }
 
 html {
@@ -1073,7 +1074,7 @@ html {
 #About #vid {
   align-self: center;
   justify-self: center;
-  width: 80%;
+  width: 60%;
   height: 40vmin;
 }
 
@@ -1100,12 +1101,12 @@ hr {
 }
 
 .comment_image_slideshow {
-  height: 40vh;
+  height: 20vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: center;
-  animation: com-slideshow 70s linear infinite;
+  animation: com-slideshow 100s linear infinite;
 }
 
 @keyframes com-slideshow {
@@ -1658,6 +1659,7 @@ body {
   background: linear-gradient(80deg, rgba(79,71,137,1) 40%, rgba(32,19,53,1) 81%);
   /* background-image: linear-gradient(160deg, #cc6c69 0%, #c2b06ef5 70%, #f7c514 98%);   */
   /* background: linear-gradient(68deg, rgba(16,255,230,1) 17%, rgba(4,17,219,1) 52%, rgba(213,46,247,1) 85%); */
+  background-repeat: no-repeat;  
 }
 
 html {
@@ -1905,8 +1907,8 @@ html {
 #About #vid {
   align-self: center;
   justify-self: center;
-  width: 80%;
-  height: 40vmin;
+  width: 60%;
+  height: 55vmin;
 }
 
 hr {
@@ -1937,7 +1939,7 @@ hr {
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: center;
-  animation: com-slideshow 70s linear infinite;
+  animation: com-slideshow 100s linear infinite;
 }
 
 @keyframes com-slideshow {
